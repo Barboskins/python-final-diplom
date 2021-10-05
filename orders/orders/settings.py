@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'orders'
 ]
 
@@ -77,7 +78,7 @@ WSGI_APPLICATION = 'orders.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'netology_diplom_final',
+        'NAME': 'DIPLOM_shop',
         'USER': 'postgres',
         'PASSWORD': 'amibamcx3700',
         'HOST': '127.0.0.1',
