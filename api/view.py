@@ -14,7 +14,7 @@ from requests import get
 from ujson import loads as load_json
 from yaml import load as load_yaml, Loader
 from django.core.exceptions import ValidationError
-from models import Order, OrderItem, Product, ConfirmEmailToken, Category, Shop, \
+from api.models import Order, OrderItem, Product, ConfirmEmailToken, Category, Shop, \
     ProductInfo, Parameter, ProductParameter, Contact
 from serializers import UserSerializer, OrderSerializer, CategorySerializer, ShopSerializer, \
     ProductInfoSerializer, OrderItemSerializer, ContactSerializer

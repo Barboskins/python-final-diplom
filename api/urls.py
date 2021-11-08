@@ -1,7 +1,7 @@
 from django.urls import path, include
 
 
-from view import PartnerUpdate, RegisterAccount, LoginAccount, CategoryViewSet, ShopViewSet, ProductInfoView, \
+from api.view import PartnerUpdate, RegisterAccount, LoginAccount, CategoryViewSet, ShopViewSet, ProductInfoView, \
     BasketView, AccountDetails, ContactView, OrderView, PartnerState, PartnerOrders, ConfirmEmail
 from rest_framework.routers import DefaultRouter
 
