@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from api.models import User, Shop, Category, Product, ProductInfo,  ProductParametr, Order, OrderItem,  Contact
+from api.models import User, Shop, Category, Product, ProductInfo,  ProductParameter, Order, OrderItem,  Contact
 
 
 class ContactSerializer(serializers.ModelSerializer):
@@ -49,7 +49,7 @@ class ProductParameterSerializer(serializers.ModelSerializer):
     parameter = serializers.StringRelatedField()
 
     class Meta:
-        model = ProductParametr
+        model = ProductParameter
         fields = ('parameter', 'value',)
 
 

@@ -21,6 +21,9 @@ from serializers import UserSerializer, OrderSerializer, CategorySerializer, Sho
 from tasks import reset_password_token_task, new_order_task
 
 class RegisterAccount(APIView):
+    """
+    Регистрация покупателей методом POST
+    """
     def post(self, request, *args, **kwargs):
         if {'first_name', 'last_name', 'email', 'password', 'company', 'position'}.issubset(request.data):
             try:
@@ -46,7 +49,6 @@ class ConfirmEmail():
     """
     Подтверждение почтового адреса
     """
-
     def post(self, request, *args, **kwargs):
 
         # проверяем обязательные аргументы
